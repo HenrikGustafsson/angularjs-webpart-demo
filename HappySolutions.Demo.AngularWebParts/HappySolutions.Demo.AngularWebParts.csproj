@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98B3A484-A9CE-4EC3-B03A-23062EDC05AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HappySolutions.Demo.AngularWebParts</RootNamespace>
+    <AssemblyName>HappySolutions.Demo.AngularWebParts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Content\Content.feature">
+      <FeatureId>{dd8d66f5-d1c1-4f7a-8692-fa38e5b75948}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="MasterPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8c3ba22e-78cf-4865-aa7c-cbf4ec42e136}</SharePointProjectItemId>
+    </None>
+    <None Include="MasterPages\HappySolutionsAngularWebParts.master" />
+    <None Include="Package\Package.package">
+      <PackageId>{ed26c5cb-4c2e-4154-8a02-638d68278e1e}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Style Library\HappySolutionsAngularWebPart\3rdParty\angular\angular.min.js.map" />
+    <None Include="Style Library\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e2efd1b0-411a-4baa-8ef0-e06c21b0887b}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HappySource.dwp" />
+    <None Include="WebParts\HappyTarget.dwp" />
+    <None Include="WebParts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eca41adc-359d-42c5-bf34-df331a7a889c}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\Content\Content.Template.xml">
+      <DependentUpon>Content.feature</DependentUpon>
+    </Content>
+    <Content Include="MasterPages\Elements.xml" />
+    <Content Include="Style Library\HappySolutionsAngularWebPart\3rdParty\angular\angular.js" />
+    <Content Include="Style Library\HappySolutionsAngularWebPart\3rdParty\angular\angular.min.js" />
+    <Content Include="Style Library\HappySolutionsAngularWebPart\js\app.js" />
+    <Content Include="Style Library\HappySolutionsAngularWebPart\views\HappySource.html" />
+    <Content Include="Style Library\HappySolutionsAngularWebPart\views\HappyTarget.html" />
+    <Content Include="Style Library\Elements.xml" />
+    <Content Include="WebParts\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

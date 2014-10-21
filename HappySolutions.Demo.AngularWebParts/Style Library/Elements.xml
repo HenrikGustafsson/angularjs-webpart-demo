@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Style Library">
+    <File Path="Style Library\HappySolutionsAngularWebPart\3rdParty\angular\angular.js" Url="Style Library/HappySolutionsAngularWebPart/3rdParty/angular/angular.js" ReplaceContent="True" />
+    <File Path="Style Library\HappySolutionsAngularWebPart\3rdParty\angular\angular.min.js" Url="Style Library/HappySolutionsAngularWebPart/3rdParty/angular/angular.min.js" ReplaceContent="True" />
+    <File Path="Style Library\HappySolutionsAngularWebPart\3rdParty\angular\angular.min.js.map" Url="Style Library/HappySolutionsAngularWebPart/3rdParty/angular/angular.min.js.map" ReplaceContent="True" />
+    <File Path="Style Library\HappySolutionsAngularWebPart\js\app.js" Url="Style Library/HappySolutionsAngularWebPart/js/app.js" ReplaceContent="True"/>
+    <File Path="Style Library\HappySolutionsAngularWebPart\views\HappySource.html" Url="Style Library/HappySolutionsAngularWebPart/views/HappySource.html" ReplaceContent="True" />
+    <File Path="Style Library\HappySolutionsAngularWebPart\views\HappyTarget.html" Url="Style Library/HappySolutionsAngularWebPart/views/HappyTarget.html" ReplaceContent="True" />
+  </Module>
+</Elements>

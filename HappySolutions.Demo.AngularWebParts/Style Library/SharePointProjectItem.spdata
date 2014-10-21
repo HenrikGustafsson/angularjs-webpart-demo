@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Style Library\" Type="ElementManifest" />
+    <ProjectItemFile Source="HappySolutionsAngularWebPart\3rdParty\angular\angular.js" Target="Style Library\HappySolutionsAngularWebPart\3rdParty\angular\" Type="ElementFile" />
+    <ProjectItemFile Source="HappySolutionsAngularWebPart\3rdParty\angular\angular.min.js" Target="Style Library\HappySolutionsAngularWebPart\3rdParty\angular\" Type="ElementFile" />
+    <ProjectItemFile Source="HappySolutionsAngularWebPart\3rdParty\angular\angular.min.js.map" Target="Style Library\HappySolutionsAngularWebPart\3rdParty\angular\" Type="ElementFile" />
+    <ProjectItemFile Source="HappySolutionsAngularWebPart\js\app.js" Target="Style Library\HappySolutionsAngularWebPart\js\" Type="ElementFile" />
+    <ProjectItemFile Source="HappySolutionsAngularWebPart\views\HappySource.html" Target="Style Library\HappySolutionsAngularWebPart\views\" Type="ElementFile" />
+    <ProjectItemFile Source="HappySolutionsAngularWebPart\views\HappyTarget.html" Target="Style Library\HappySolutionsAngularWebPart\views\" Type="ElementFile" />
+  </Files>
+</ProjectItem>
